@@ -21,7 +21,7 @@ export function TodoItem({ onToggle, ...todo }: TodoProps) {
       </div>
       {tags.length > 0 && (
         <ul>
-          {tags.map((tag, i) => (
+          {tags.map((tag) => (
             <li key={tag}>{tag}</li>
           ))}
         </ul>

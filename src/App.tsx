@@ -11,7 +11,7 @@ function App() {
   }
 
   function handleToggle(todo: Todo) {
-    const id = todo.id;
+    const id: number = todo.id;
     setTodos((prevTodos) =>
       prevTodos.map((todo) =>
         todo.id === id ? { ...todo, completed: !todo.completed } : todo
@@ -19,8 +19,8 @@ function App() {
     );
   }
 
-  const todosNotCompleted = todos.filter((todo) => !todo.completed);
-  const todosCompleted = todos.filter((todo) => todo.completed);
+  const todosNotCompleted: Todo[] = todos.filter((todo) => !todo.completed);
+  const todosCompleted: Todo[] = todos.filter((todo) => todo.completed);
 
   return (
     <>
