@@ -6,7 +6,7 @@ describe("convertStringToTags()", () => {
     expect(convertStringToTags("hello,bye,something")).toEqual([
       "hello",
       "bye",
-      "something",
+      "something"
     ]);
   });
 
@@ -28,8 +28,8 @@ describe("convertStringToTags()", () => {
   });
 });
 
-describe("createId", () => {
+describe("createId()", () => {
   it("should return a number", () => {
-    // implement me
+    expect(createId()).toEqual(Date.now());
   });
 });
